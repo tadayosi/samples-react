@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npx eslint ."
+    "lint": "npx eslint .",
+    "deploy": "npm run build && cp build/index.html build/200.html && surge build/ tadayosi-sample-react.surge.sh"
   },
   "eslintConfig": {
     "extends": [
