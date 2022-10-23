@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 import './App.css'
 import { Hello } from './hello'
 import logo from './logo.svg'
-import { Split } from './split'
+import { SplitView } from './split'
 
 export const App: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ export const App: React.FC = () => {
         </header>
         <Switch>
           <Route path="/hello" component={Hello} />
-          <Route path="/split" component={Split} />
+          <Route path="/split" component={SplitView} />
         </Switch>
       </div>
     </BrowserRouter>
